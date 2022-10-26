@@ -1,0 +1,347 @@
+@import url(slider.css);
+@import url(mainfour.css);
+@import url(mainFirst.css);
+@import url(footer.css);
+
+.iagroup {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* width */
+.iagroup::-webkit-scrollbar {
+  width: 10px;
+}
+.iagroup::-webkit-scrollbar-track {
+  background: rgba(15, 15, 15, 0.7);
+}
+.iagroup::-webkit-scrollbar-thumb {
+  background: #b6b6b6;
+}
+.iagroup::-webkit-scrollbar-thumb:hover {
+  background: rgb(147, 147, 147);
+}
+
+.iagroup {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.4)
+    ),
+    url(../img/backk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/* .header_top{
+    width: 100vw;
+    height: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #fff;
+} */
+
+header {
+  width: 100vw;
+  height: 50px;
+  /* border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff; */
+  background-color: rgba(255, 255, 255, 0.878);
+  box-shadow: 0 1px 20px rgb(0, 0, 0);
+  position: fixed;
+  z-index: 1000;
+}
+.header_content {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_content .logo img {
+  height: 35px;
+}
+
+.logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1em;
+  font-size: 1.2em;
+}
+
+.logo h2 {
+  margin-left: 10px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.header_content .menu_link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.header_content .menu_link .menu_item {
+  display: flex;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.header_content .menu_link .menu_item a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid transparent;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.header_content .menu_link .menu_item a:hover {
+  border-color: black;
+}
+
+.main_first {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.main_second {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.main_first .main_first_content,
+.main_second .main_second_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.main_first .main_first_content > h2,
+.main_second .main_second_content > h2 {
+  width: 70%;
+  font-size: 6em;
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.main_first .main_first_content > h2:hover {
+  color: rgb(203, 229, 252);
+}
+
+.main_second .main_second_content > h2 {
+  font-size: 4em;
+  /* background-color: rgba(0, 0, 0, 0.532);   */
+}
+
+/*-------------------------------------------------------------------------*/
+
+.main_second_content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* body { font: 400 1em/1.5 "Neuton";
+  background: #090d00;
+  color: rgba(255,255,255,.25);
+  text-align: center;
+  margin: 0;
+} */
+
+.main_second_content > p {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	width: 40em;
+	margin: 0;
+}
+
+.main_second_content > p >  span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+.main_second {
+  width: 100%;
+  background: rgba(15, 15, 15, 0.6);
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.633),
+      rgba(15, 15, 15, 0.592)
+    ),
+    url(../img/back3.jpg);
+  background-size: cover;
+}
+
+.main_four {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.878);
+  min-width: 76px;
+  top: 50px;
+  padding: 5px 5px;
+  z-index: 1;
+  margin-left: -1rem;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.dropbtn {
+  border: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+#droplink {
+  padding-top: 5px;
+}
+
+.main_third {
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+.main_third_content {
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+@media (max-width: 1200px) {
+  .main_first .main_first_content > h2,
+  .main_second .main_second_content > h2 {
+    font-size: 3rem;
+  }
+  .services_item h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .main_first .main_first_content > h2,
+  .main_second .main_second_content > h2 {
+    font-size: 2rem;
+  }
+  .services_item h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main_first .main_first_content > h2,
+  .main_second .main_second_content > h2 {
+    font-size: 1rem;
+  }
+  .services_item h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 727px) {
+  header {
+    height: 200px;
+  }
+  .header_content {
+    flex-direction: column;
+  }
+  .header_content .menu_link {
+    flex-direction: column;
+  }
+  .header_content .menu_link .menu_item {
+    height: 25px;
+    margin-left: 0;
+  }
+  .logo {
+    margin-left: 0;
+  }
+}
+
+
+

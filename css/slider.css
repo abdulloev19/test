@@ -1,0 +1,262 @@
+.picContainer {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+.picContainer img {
+  width: 100%;
+  height: calc(100vh - 50px);
+  transition: 0.5s;
+}
+
+#image1 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.4)
+    ),
+    url(../img/mobile-phone.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: pages 1s;
+}
+
+#image2 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.4)
+    ),
+    url(../img/design2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: pages2 1s;
+}
+
+#image3 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.4)
+    ),
+    url(../img/web.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: pages3 1s;
+}
+
+#image4 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.4)
+    ),
+    url(../img/design.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: pages4 1s;
+}
+
+#image5 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.4)
+    ),
+    url(../img/konsultacii.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: pages5 1s;
+}
+
+#image6 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.4)
+    ),
+    url(../img/design2.jpg);
+}
+
+.img {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+.right {
+  position: absolute;
+  height: 100%;
+  width: 60px;
+  z-index: 99;
+  cursor: pointer;
+  color: #fff;
+  transition: 1s;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  position: relative;
+  height: 100%;
+  width: 60px;
+  z-index: 99;
+  cursor: pointer;
+  color: #fff;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+}
+
+.left svg,
+.right svg {
+  transition: all 0.3s;
+}
+
+.left svg:hover,
+.right svg:hover {
+  transform: scale(1.2);
+}
+
+.dot {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  z-index: 99;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.dot.a1 {
+  margin-left: -30px;
+}
+.dot.a2 {
+  margin-left: -10px;
+}
+.dot.a3 {
+  margin-left: 10px;
+}
+.dot.a4 {
+  margin-left: 30px;
+}
+.dot.a5 {
+  margin-left: 50px;
+}
+.dot.a1:hover {
+  background: #fff;
+}
+.dot.a2:hover {
+  background: #fff;
+}
+.dot.a3:hover {
+  background: #fff;
+}
+.dot.a4:hover {
+  background: #fff;
+}
+.dot.a5:hover {
+  background: #fff;
+}
+
+.services_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1170px;
+  height: 85vh;
+  border: 1px solid #fff;
+  margin: 20px auto;
+  animation: h3animation 0.5s both;
+  animation-delay: 0.5s; /* задержка в 1 секунду */
+  transition: all 0.3s;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.services_item h3 {
+  height: 50px;
+  padding: 10px;
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-delay: 0.5s; /* задержка в 1 секунду */
+  animation: h3animation 0.5s both;
+  font-family: "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif sans-serif;
+  text-transform: uppercase;
+}
+.services_item p {
+  padding: 0 20px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  animation: pages 1s both;
+  animation-delay: 1s; /* задержка в 1 секунду */
+}
+
+@keyframes pages {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pages2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pages3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pages4 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pages5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
